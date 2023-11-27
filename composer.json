@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "awssat/laravel-visits": "^6.0",
         "dyrynda/laravel-cascade-soft-deletes": "^4.3",
         "dyrynda/laravel-model-uuid": "^7.1",
         "guzzlehttp/guzzle": "^7.2",
