@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('registration_number');
 
             $table->date('year');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

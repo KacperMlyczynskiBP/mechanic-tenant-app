@@ -3,11 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Dyrynda\Database\Support\CascadeSoftDeletes;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Appointment extends Model
 {
     use HasFactory;
+    use SoftDeletes;
+    use CascadeSoftDeletes;
 
     public function user(): BelongsTo
     {

@@ -24,6 +24,7 @@ return new class extends Migration
             $table->date('appointment_date');
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
